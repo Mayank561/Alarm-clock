@@ -1,0 +1,166 @@
+/* importing fonts*/ 
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* universal*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+/* heading */
+.heading{
+  text-align: center;
+  margin: 2rem 0;
+}
+/* time */
+.time{
+  font-weight: bold;
+  padding: 3px;
+  font-size: 30px;
+}
+/* flexbox */
+.d-flex{
+  display: flex;
+}
+/* button */
+.btn{
+  outline: none;
+  border: none;
+  background-color: wheat;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+}
+/* select */
+ select{
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  /* appearance: none;
+  outline: black;
+  background-color: wheat;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  color: #0E141B;
+  border-color: black; */
+} 
+
+body{
+  min-height: 100vh;
+  background-color: black;
+}
+/* main container */
+.main-container{
+  display: flex;
+  justify-content: center;
+}
+/* clock container */
+.clock-container{
+  display: flex;
+  /* position: fixed; */
+
+  flex-direction: column;
+  align-items: center;
+   background: rgb(86, 145, 224);
+  background: radial-gradient(
+    circle,
+    rgba(86, 145, 224, 1) 17%,
+    rgba(0, 117, 255, 1) 73%
+  ); 
+  
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 66px -30px rgba(0, 0, 0, 0.75);
+}
+/* images */
+.img{
+  max-width: 100px;
+}
+/* current time */
+.current-time{
+  /* font-size: 2.5rem; */
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 100px;
+}
+/* alarm form */
+.alarm-form div{
+  margin-right: 1rem;
+}
+/* sumbmit button */
+.submit-button{
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: brown;
+  background-color: rgb(174, 52, 52);
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.submit-button:active{
+  background-color: rgb(174, 52, 52);
+  font-size: 1.2rem;
+}
+.set-alarm-container{
+  margin-top: 2rem;
+  text-align: center;
+
+}
+.set-alarm-container-title{
+  margin-bottom: 1rem;
+}
+.alarms-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  background-color:  #fff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+}
+.alarm-container .alarm-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding:0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+.alarms-container .alarm-item .alarm-time{
+  font-weight: bold;
+
+}
+.alarms-container .alarm-item .delete-button{
+  color: #ff0000;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* style of devices of screen size less than 768px */
+@media only screen and (min-width: 600px) {
+  /* adding padding to container */
+  .main-container {
+    padding-block: 5px;
+  }
+  .clock-container{
+      justify-content: center;
+      border-radius: 50px;
+      position: fixed;
+    
+  }
+}
+
+
+
+
+
